@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="height=device-height, initial-scale=1.0">
+    <title>poki game</title>
+    <style>
+        body{
+            background-color: #4158D0;
+background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+font-family: 'Courier New', monospace;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             flex-direction: column;
+        }
+        #p1{
+            height: 350px;
+            width: 230px;
+            background-color: rgb(241, 10, 10);
+            position: relative;
+            top: 265px;
+        }
+        #p2{
+            height: 350px;
+            width: 230px;
+            background-color: rgb(98, 0, 255);
+            position: relative;
+            left: 50px;
+        }
+        #p3{
+            height: 350px;
+            width: 230px;
+            background-color: rgb(255, 238, 0);
+            position: relative;
+            bottom: 265px;
+            left: 100px;
+        }
+        .p{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 5px solid black;
+            border-radius: 20px;
+        }
+        p{
+            font-size: 20px;
+        }
+        img{
+            opacity: 0;
+        }
+        img:hover{
+            opacity: 1;
+        }
+        #p1:hover{
+            z-index: 1;
+        }
+        #p2:hover{
+            z-index: 1;
+        }
+        h1{
+         font-family: 'Courier New', monospace;
+         color: #fce6fd;
+        text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hover on center to unveil Pokemon</h1>
+    <div id="content">
+    <div class="p" id="p1">
+        <p>Card 1</p>
+        <img src="https://e0.pxfuel.com/wallpapers/5/302/desktop-wallpaper-ash-and-pikachu-artwork-ash-and-pikachu.jpg" width="160px" height="230px" alt="">
+    </div>
+    <div class="p" id="p2">
+        <p>Card 2</p>
+        <img src="https://wallpapercrafter.com/th800/445559-Video-Game-Pokmon-Phone-Wallpaper.jpg" width="160px" height="230px" alt="">
+    </div>
+    <div class="p" id="p3">
+        <p>Card 3</p>
+         <img src="https://image.winudf.com/v2/image/Y29tLmdhbmFzZGV2Lm1ld3R3by53YWxscGFwZXJzLmhkX3NjcmVlbl8wXzE1MTU4MTc4NzBfMDc1/screen-0.webp?fakeurl=1&type=.webp" width="160px" height="230px" alt="">
+    </div>
+</div>
+</body>
+</html>
